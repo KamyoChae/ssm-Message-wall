@@ -1,0 +1,188 @@
+/*
+* @Author: zhong
+* @Date:   2018-11-01 17:03:51
+* @Last Modified by:   zhong
+* @Last Modified time: 2018-11-10 22:10:17
+*/
+*{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	font-family: "瀹嬩綋",Georgia,Serif;
+}
+/*宸﹁竟*/
+.leftDiv{
+	position: fixed;
+	width: 30%;
+	height: 100%;
+	overflow: hidden;
+}
+.rotationImg{
+	position:absolute;
+	width: 100%;
+	opacity: 0;
+	transition: all 1s;
+}
+.rotationImg1{
+	opacity: 1;
+}
+/*鍙宠竟*/
+.rightDiv{
+	position: relative;
+	float: right;
+	width: 70%;
+	height: 100%;
+	overflow: hidden;
+}
+/*鍙充笂*/
+.rightTopDiv{
+	width: 100%;
+	height: 10%;
+	font-size: 18px;
+	text-align: right;
+}
+.rightTopDiv a{
+	margin-right: 50px;
+	margin-top: 40px;
+	display: inline-block;
+	text-align: center;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-decoration: none;
+	color: #4F4F4F;
+}
+.rightTopDiv a:after{
+	display: block;
+	content: "";
+	height: 2px;
+	width: 0;
+	margin: auto;
+	background-color: #000;
+	transition: all .35s;
+}
+.rightTopDiv a:hover:after{
+	width: 100%;
+}
+/*涓昏閮ㄥ垎*/
+.rightMainDiv{
+	position: relative;
+	width: 100%;
+	height: 90%;
+}
+/*宸﹁竟鍔ㄧ敾*/
+.leftSpan{
+	display: inline-block;
+	height: 100%;
+	width: 30%;
+}
+/*鍙宠竟杈撳叆妗�*/
+.rightSpan{
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	width: 60%;
+	/* background: orange; */
+	overflow: hidden;
+}
+.topicDiv{
+	position: absolute;
+	/* background-color: red; */
+	top: 30px;
+	animation: topicDownward 1s ease-in-out; 
+}
+@keyframes topicDownward{
+	0%{
+		top: -100px;
+	}
+	50%{
+		top: 95px;
+	}
+	75%{
+		top: 15px;
+	}
+	100%{
+		top: 30px;
+	}
+}
+.textForm{
+	position: absolute;
+	top: 150px;
+}
+.topic{
+	font-size: 40px;
+	transition: all 1s;
+}
+.topicP{
+	margin-top: 20px;
+	margin-left: 30px;
+	font-size: 30px;
+	transition: all 1s;
+}
+.text{
+	display: block;
+	width: 430px;
+	height: 50px;
+	font-size: 20px;
+	margin-top: 20px;
+	border-radius: 4px;
+	background: 0 0;
+	padding: 0 20px;
+	border: 1px #aaa solid;
+}
+.textForm>p{
+	margin-top: 1px;
+	color: #999;
+}
+.validate{
+	display: inline-block;
+	width: 200px;
+}
+/*楠岃瘉鐮�*/
+.rightSpan img{
+	position: absolute;
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	margin: 20px 10px;
+}
+/*鎸夐挳*/
+.button{
+	border: 1px #3083ff solid;
+	background-color: #3487ff;
+	width: 430px;
+	color: #fff;
+	transition: all 1s;
+}
+/*榧犳爣绉诲姩鍒版寜閽笂棰滆壊鍙樺寲*/
+.button:hover {
+	background-color: #004B97;
+}
+/*椋庣瓭*/
+.rightMainDiv>img{
+	position: absolute;
+	width: 20%;
+	top: 45%;
+	left: 1200px;
+	z-index: -1;
+	animation: kiteAni 70s infinite linear;
+}
+/*椋庣瓭鍔ㄧ敾*/
+@keyframes kiteAni{
+	%0{
+		left: 1200px;
+	}
+	50%{
+		left: -1000px;
+	}
+	100%{
+		left: 1000px;
+	}
+}
+input:focus {
+    border-color: #549df8;
+}
